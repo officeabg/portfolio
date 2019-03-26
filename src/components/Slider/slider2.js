@@ -19,11 +19,11 @@ class Slider2 extends React.Component {
       },
       breakpoints: {
         1924: {
-          slidesPerView: 3,
+          slidesPerView: 2,
           spaceBetween: 30,
         },
         1279: {
-          slidesPerView: 1,
+          slidesPerView: 2,
           spaceBetween: 20,
         },
         640: {

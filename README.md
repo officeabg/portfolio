@@ -5,6 +5,8 @@
 ## Usage
 
 develop
+`npm install -g gatsby-cli`
+`npm install --save`
 `gatsby develop`
 
 or
