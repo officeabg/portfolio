@@ -1,0 +1,58 @@
+#web {
+    margin-top: 80px;
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.modalportfolio{
+
+    width:50%;
+}.overlay {
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 1000;
+    padding: 1.2rem;
+  }
+  .overlayCenter {
+    align-items: center;
+  }
+  .modal {
+    max-width: 800px;
+    position: relative;
+    padding: 1.2rem;
+    background: #ffffff;
+    background-clip: padding-box;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.25);
+    margin: auto;
+  }
+  .closeButton {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    display: flex;
+  }
+  .transitionEnter {
+    transform: scale(0);
+  }
+  .transitionEnterActive {
+    transform: scale(1);
+    transition: transform 1000ms ease;
+  }
+  .transitionExit {
+    transform: scale(1);
+  }
+  .transitionExitActive {
+    transform: scale(0);
+    transition: transform 1000ms ease;
+  }

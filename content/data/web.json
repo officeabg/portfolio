@@ -1,0 +1,128 @@
+[
+  {
+    "galleryDepartment": "ADM CONSULTING",
+    "link": "http://adm-consulting.ro/",
+    "image": "http://yeya.ro/img/web/i/adm.png",
+    "year": "2018",
+    "index": "1"
+  },
+  {
+    "galleryDepartment": "AGROSTEFAN",
+    "link": "http://agrostefan.ro/",
+    "image": "http://yeya.ro/img/web/i/agro.png",
+    "year": "2014",
+    "index": "2"
+  },
+  {
+    "galleryDepartment": "DEMOCRACY STUDIES",
+    "link": "http://democracystudies.ro",
+    "image": "http://yeya.ro/img/web/i/democracy.png",
+    "year": "2015",
+    "index": "3"
+  },
+  {
+    "galleryDepartment": "AVIZE ONLINE",
+    "link": "http://avizeonline.ro/",
+    "image": "http://yeya.ro/img/web/i/avize.png",
+    "year": "2011",
+    "index": "4"
+  },
+  {
+    "galleryDepartment": "ECASEONLINE.RO",
+    "link": "http://www.ecaseonline.ro/",
+    "image": "http://yeya.ro/img/web/i/ecase.png",
+    "year": "2014",
+    "index": "5"
+  },
+  {
+    "galleryDepartment": "EDESPAGUBIRI.RO",
+    "link": "http://www.edespagubiri.ro/",
+    "image": "http://yeya.ro/img/web/i/edes.png",
+    "year": "2016",
+    "index": "6"
+  },
+  {
+    "galleryDepartment": "EINFIINTARI FIRME",
+    "link": "http://www.einfiintari.ro/",
+    "image": "http://yeya.ro/img/web/i/einfiintari.png",
+    "year": "2018",
+    "index": "7"
+  },
+  {
+    "galleryDepartment": "EXPERT CONT",
+    "link": "http://www.expert-cont.ro/",
+    "image": "http://yeya.ro/img/web/i/expert.png",
+    "year": "2012",
+    "index": "8"
+  },
+  {
+    "galleryDepartment": "INTERCONSTRUCT 93",
+    "link": "http://www.interconstruct93.ro/",
+    "image": "http://yeya.ro/img/web/i/inter.png",
+    "year": "2015",
+    "index": "9"
+  },
+  {
+    "galleryDepartment": "MACHIAJ SEMIPERMANENT",
+    "link": "http://www.machiajtatuaj.ro/",
+    "image": "http://yeya.ro/img/web/i/machiaj.png",
+    "year": "2017",
+    "index": "10"
+  },
+  {
+    "galleryDepartment": "MEDIATOR CRISTINA DUMITRU",
+    "link": "http://www.medierecd.ro/",
+    "image": "http://yeya.ro/img/web/i/mediere.png",
+    "year": "2014",
+    "index": "11"
+  },
+  {
+    "galleryDepartment": "EXECUTOR JUDECATORESC EDUARD PETICARU",
+    "link": "http://www.peticaru.ro/",
+    "image": "http://yeya.ro/img/web/i/peticaru.png",
+    "year": "2014",
+    "index": "12"
+  },
+  {
+    "galleryDepartment": "PLACI PLASTIC",
+    "link": "http://www.placiplastic.ro/",
+    "image": "http://yeya.ro/img/web/i/placi.png",
+    "year": "2017",
+    "index": "13"
+  },
+  {
+    "galleryDepartment": "RAWPEDIA",
+    "link": "http://www.rawpedia.ro/",
+    "image": "http://yeya.ro/img/web/i/raw.png",
+    "year": "2016",
+    "index": "14"
+  },
+  {
+    "galleryDepartment": "TAXE MUNCA",
+    "link": "http://www.taxemunca.ro/",
+    "image": "http://yeya.ro/img/web/i/taxe.png",
+    "year": "2016",
+    "index": "15"
+  },
+  {
+    "galleryDepartment": "CABINET DE AVOCAT TIRDEI CONSTANTIN",
+    "link": "http://www.tirdei.ro/",
+    "image": "http://yeya.ro/img/web/i/tirdei.png",
+    "year": "2014",
+    "index": "16"
+  },
+  {
+    "galleryDepartment": "VIVID 13",
+    "link": "http://www.vivid13.ro/",
+    "image": "http://yeya.ro/img/web/i/vivid13.png",
+    "year": "2017",
+    "index": "17"
+  },
+  {
+    "galleryDepartment": "YEYA INTERNATIONAL",
+    "link": "http://www.yeyainternational.com/",
+    "image": "http://yeya.ro/img/web/i/yeyaint.png",
+    "year": "2013",
+    "index": "18"
+  }
+]

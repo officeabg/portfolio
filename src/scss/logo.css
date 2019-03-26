@@ -1,0 +1,19 @@
+.headshot:hover {
+  -webkit-transform: scale(1.115) !important;
+  transform: scale(0.99) !important;
+  transition: all 1.3s cubic-bezier(0.19, 1, 0.22, 1) 0s !important; }
+
+.gallery-link img {
+  margin: 0px !important; }
+
+@media (max-width: 996px) {
+  .gallery-link img {
+    position: relative !important;
+    height: auto !important;
+    margin: 0px !important; } }
+@media (min-width: 700px) {
+  .gallery-link:hover {
+    -webkit-transform: scale(0.99) !important;
+    transform: scale(1.115) !important; } }
+
+/*# sourceMappingURL=logo.css.map */
