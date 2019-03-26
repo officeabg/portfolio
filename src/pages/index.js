@@ -196,7 +196,7 @@ class Profile extends React.Component {
                   </div>
                   <h5>GraphQL</h5>
                   <div className="svgskill">
-                    <img src="https://yeya.ro/img/graphql-white.png" />
+                    <img src="../img/graphql-white.png" />
                   </div>
                   <div className="health">
                     <span className="skill-bar" style={{ width: '50%' }}>
@@ -218,7 +218,7 @@ class Profile extends React.Component {
                   </div>
                   <h5>UiKit</h5>
                   <div className="svgskill">
-                    <img src="https://yeya.ro/img/uikit1.png" />
+                    <img src="../img/uikit1.png" />
                   </div>
                   <div className="health">
                     <span className="skill-bar" style={{ width: '100%' }}>
