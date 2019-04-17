@@ -57,6 +57,28 @@ class PortfolioWeb extends React.Component {
               <div className="col-lg-2">&nbsp;</div>
             </div>
           </div>
+          <nav>
+            <ul className="pagination">
+              <li className="page-item">
+                <a className="page-link" href="/portfoliopm1">
+                  Previous
+                </a>
+              </li>
+              <li className="page-item">
+                <a className="page-link" href="/portfoliopm1">
+                  1
+                </a>
+              </li>
+              <li className="page-item active">
+                <span className="page-link">
+                  2<span className="sr-only">(current)</span>
+                </span>
+              </li>
+              <li className="page-item active">
+                <span className="page-link-disabled">Next</span>
+              </li>
+            </ul>
+          </nav>
         </section>
       </Layout>
     )

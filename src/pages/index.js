@@ -95,7 +95,7 @@ class Profile extends React.Component {
                 <div className="col-lg-8">
                   <div className="section-heading heading-black">
                     <h1 className="name text-left">Alex Bunduc</h1>
-                    <h5>Full Stack Web Developer</h5>
+                    <h5>Front End Developer</h5>
                     <br />
                   </div>
                   <p className="cv-p">
@@ -106,12 +106,12 @@ class Profile extends React.Component {
                     direction... to the future.
                   </p>
                   <p className="cv-p">
-                    Experienced FullStack Developer with more than 10 years of
-                    experience. FrontEnd Development with technologies: HTML,
+                    Experienced Frontend Developer with more than 10 years of
+                    experience. Frontend Development with technologies: HTML,
                     CSS, JavaScript, React. BackEnd experience with Meteor,
                     MongoDB, GraphQL. Experienced graphic designer Adobe
-                    Photoshop, InDesign, Sketch, FramerX, print & web. Designed,
-                    developed & managed over 30 websites, portfolio below.
+                    Photoshop print & web. Designed, developed & managed over 30
+                    websites, portfolio below.
                   </p>
 
                   <div className="row cv-p">

@@ -658,6 +658,7 @@ b {
     z-index: 50;
     right: 100px;
     background: #ffffff !important;
+    background-color: #212529 !important;
     padding: 10px 20px;
     color: #1f1f21 !important;
     font-weight: 500;
@@ -981,7 +982,10 @@ b {
   margin-top: 80px; }
 
 .pagination {
-  margin-left: 37%; }
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px; }
 
 .name {
   font-weight: 300; }
