@@ -30,7 +30,7 @@ class PortfolioWeb extends React.Component {
                     <ul className=" gallery-wrap list">
                       {data.map(x => (
                         <li key={x.index} className="gallery-item">
-                          <a href={x.link}>
+                          <a href={x.link} target="_blank">
                             <div className="gallery-link">
                               <div className="gallery-name">
                                 <h5>

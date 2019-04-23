@@ -11,6 +11,9 @@ import Slider3 from 'components/slider/slider3'
 import Slider4 from 'components/slider/slider4'
 
 class Profile extends React.Component {
+  componentDidMount() {
+    setTimeout(() => window.dispatchEvent(new Event('resize')), 500)
+  }
   render() {
     const { location, data } = this.props
 
@@ -20,7 +23,7 @@ class Profile extends React.Component {
         <header className="text-white">
           <div className="container-fluid">
             <div className="row">
-              <div className="col-lg-2">&nbsp;</div>
+              <div className="col-lg-3">&nbsp;</div>
               <div className="col-lg-4">
                 <div id="typewriter">
                   <Typing speed={5} startDelay={500}>
@@ -75,7 +78,7 @@ class Profile extends React.Component {
                 </div>
               </div>
 
-              <div className="col-lg-4 portrait">
+              <div className="col-lg-3 portrait">
                 <img
                   className="float-left img-fluid"
                   src="http://yeya.ro/img/me2sm.jpg"

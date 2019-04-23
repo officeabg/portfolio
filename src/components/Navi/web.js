@@ -8,35 +8,35 @@ class Web extends React.Component {
       <div className="collapse navbar-collapse" id="navbarResponsive">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#wrap">
+            <a className="nav-link js-scroll-trigger" href="/">
               <div className="btn btn-three">
                 <span>About</span>
               </div>
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#skills">
+            <a className="nav-link js-scroll-trigger" href="/#skills">
               <div className="btn btn-three">
                 <span>Skills</span>
               </div>
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#portfolio">
+            <a className="nav-link js-scroll-trigger" href="/#portfolio">
               <div className="btn btn-three">
                 <span>Portfolio</span>
               </div>
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="cv.php">
+            <a className="nav-link js-scroll-trigger" href="cv">
               <div className="btn btn-three">
                 <span>CV</span>
               </div>
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#contact">
+            <a className="nav-link js-scroll-trigger" href="/#contact">
               <div className="btn btn-three">
                 <span>Contact</span>
               </div>

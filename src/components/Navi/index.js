@@ -1,6 +1,8 @@
 import React from 'react'
 import './style.scss'
 import { If, Else } from 'rc-if-else'
+import { Link } from 'gatsby'
+
 class Navi extends React.Component {
   constructor() {
     super()
@@ -22,12 +24,12 @@ class Navi extends React.Component {
         id="mainNav"
       >
         <div className="container-fluid">
-          <a className="navbar-brand js-scroll-trigger" href="/">
+          <Link className="navbar-brand js-scroll-trigger" to="/">
             <div className="swoosh logotop">
               <div className="swoosh-bar"> </div>
               <img src="http://yeya.ro/img/logo-sm.png" alt="" width="220" />
             </div>
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -39,39 +41,42 @@ class Navi extends React.Component {
           <div className="collapse navbar-collapse" id="navbarResponsive">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="/">
+                <Link className="nav-link js-scroll-trigger" to="/#">
                   <div className="btn btn-three">
                     <span>About</span>
                   </div>
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#skills">
+                <Link className="nav-link js-scroll-trigger" to="/#skills">
                   <div className="btn btn-three">
                     <span>Skills</span>
                   </div>
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#portfolio-web">
+                <Link
+                  className="nav-link js-scroll-trigger"
+                  to="/#portfolio-web"
+                >
                   <div className="btn btn-three">
                     <span>Portfolio</span>
                   </div>
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="cv.php">
+                <Link className="nav-link js-scroll-trigger" to="/cv">
                   <div className="btn btn-three">
                     <span>CV</span>
                   </div>
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#contact">
+                <Link className="nav-link js-scroll-trigger" to="/#contact">
                   <div className="btn btn-three">
                     <span>Contact</span>
                   </div>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -81,59 +86,59 @@ class Navi extends React.Component {
                 <div className="overlayMenu">
                   <ul className="navbar-nav ml-auto">
                     <li className="nav-item">
-                      <a
+                      <Link
                         className="nav-link js-scroll-trigger"
-                        href="#wrap"
+                        to="/"
                         onClick={showMenu}
                       >
                         <div className="btn btn-three">
                           <span>About</span>
                         </div>
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <a
+                      <Link
                         className="nav-link js-scroll-trigger"
-                        href="#skills"
+                        to="/#skills"
                         onClick={showMenu}
                       >
                         <div className="btn btn-three">
                           <span>Skills</span>
                         </div>
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <a
+                      <Link
                         className="nav-link js-scroll-trigger"
-                        href="#portfolio"
+                        to="/#portfolio"
                         onClick={showMenu}
                       >
                         <div className="btn btn-three">
                           <span>Portfolio</span>
                         </div>
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <a
+                      <Link
                         className="nav-link js-scroll-trigger"
-                        href="cv.php"
+                        to="/cv"
                         onClick={showMenu}
                       >
                         <div className="btn btn-three">
                           <span>CV</span>
                         </div>
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <a
+                      <Link
                         className="nav-link js-scroll-trigger"
-                        href="#contact"
+                        to="/#contact"
                         onClick={showMenu}
                       >
                         <div className="btn btn-three">
                           <span>Contact</span>
                         </div>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>

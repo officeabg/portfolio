@@ -10,6 +10,12 @@ import 'scss/gatstrap.scss'
 import 'animate.css/animate.css'
 import 'font-awesome/css/font-awesome.css'
 import Contact from 'components/contact/contact'
+import SmoothScroll from 'smooth-scroll'
+
+if (typeof window !== "undefined") {
+  // eslint-disable-next-line global-require
+  require("smooth-scroll")('a[href*="#"]')
+}
 
 class Layout extends React.Component {
   componentDidMount() {

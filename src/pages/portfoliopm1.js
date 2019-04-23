@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactDOM from 'react-dom';
 import { siteMetadata } from '../../gatsby-config'
 import Layout from 'components/Layout'
 import Meta from 'components/Meta'
@@ -19,7 +20,7 @@ class PortfolioWeb extends React.Component {
     return (
       <Layout>
         <Meta site={siteMetadata} title="Portfolio Web" />
-        <section id="web">
+        <section id="portfoliopm1">
           <div className="container-fluid">
             <div className="row">
               <div className="col-lg-2">&nbsp;</div>
@@ -52,26 +53,40 @@ class PortfolioWeb extends React.Component {
                                 onClick={() =>
                                   this.setState({
                                     open: true,
-                                    index: x.index,
+                                    index: x,
                                   })
                                 }
                               />
                             </div>
                           </a>
-                          {console.log(this.state.index)}
                         </li>
                       ))}
                       <Modal
                         open={open}
                         onClose={() => this.setState({ open: false })}
                         center
+                        animationDuration={100}
                       >
-                        <img
-                          className="headshot"
-                          src={this.state.index.image}
-                          width="1000"
-                          alt=""
-                        />
+                        <div className="modDal">
+                          <div className="row">
+                            <div className="col-lg-1 col-sm-1" />
+                            <div className="col-lg-3 col-sm-10">
+                              <img
+                                className="img-fluid rounded portfoliom"
+                                src={this.state.index.orig}
+                                alt=""
+                              />
+                            </div>
+                            <div className="col-lg-7 col-sm-10">
+                              <img
+                                className="img-fluid rounded"
+                                src={this.state.index.image}
+                                alt=""
+                              />
+                            </div>
+                            <div className="col-lg-1 col-sm-1" />
+                          </div>
+                        </div>
                       </Modal>
                     </ul>
                   </div>
@@ -80,28 +95,34 @@ class PortfolioWeb extends React.Component {
               <div className="col-lg-2">&nbsp;</div>
             </div>
           </div>
-          <nav>
-            <ul className="pagination">
-              <li className="page-item active">
-                <span className="page-link-disabled">Previous</span>
-              </li>
-              <li className="page-item active">
-                <span className="page-link">
-                  1<span className="sr-only">(current)</span>
-                </span>
-              </li>
-              <li className="page-item">
-                <a className="page-link" href="/portfoliopm2">
-                  2
-                </a>
-              </li>
-              <li className="page-item">
-                <a className="page-link" href="/portfoliopm2">
-                  Next
-                </a>
-              </li>
-            </ul>
-          </nav>
+          <div className="no-gutters">
+            <div className="row">
+              <div className="col-lg-2 col-sm-2" />
+              <div className="col-lg-8 col-sm-8">
+                <ul className="pag d-flex justify-content-center">
+                  <li className="page-item active">
+                    <span className="page-link-disabled">Previous</span>
+                  </li>
+                  <li className="page-item active">
+                    <span className="page-link">
+                      1<span className="sr-only">(current)</span>
+                    </span>
+                  </li>
+                  <li className="page-item">
+                    <a className="page-link" href="/portfoliopm2">
+                      2
+                    </a>
+                  </li>
+                  <li className="page-item">
+                    <a className="page-link" href="/portfoliopm2">
+                      Next
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="col-lg-2 col-sm-2" />
+            </div>
+          </div>
         </section>
       </Layout>
     )

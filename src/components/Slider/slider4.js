@@ -1,39 +1,46 @@
 import React from 'react'
 import Swiper from 'react-id-swiper'
+// Need to add Pagination, Navigation modules
+import { Pagination, Navigation, Autoplay } from 'swiper/dist/js/swiper.esm'
 import { Link } from 'gatsby'
-import './slider1.scss'
+import './slider.scss'
 
 class Slider4 extends React.Component {
   render() {
     const params = {
+      modules: [Pagination, Navigation, Autoplay], // Add nescessary modules here
+      slidesPerView: 3,
+      spaceBetween: 30,
       slidesPerGroup: 1,
       loop: true,
-      loopFillGroupWithBlank: true,
       pagination: {
         el: '.swiper-pagination',
+        type: 'bullets',
         clickable: true,
       },
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
+      shouldSwiperUpdate: true,
+      rebuildOnUpdate: true,
       breakpoints: {
-        1924: {
-          slidesPerView: 3,
-          spaceBetween: 20,
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 40,
         },
-        1279: {
-          slidesPerView: 2,
-          spaceBetween: 20,
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 30,
         },
         640: {
-          slidesPerView: 1,
-          spaceBetween: 10,
+          slidesPerView: 2,
+          spaceBetween: 20,
         },
         320: {
           slidesPerView: 1,
           spaceBetween: 10,
-        },
+        }
       },
     }
     return (

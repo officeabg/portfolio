@@ -11,15 +11,15 @@
  */
 
  .swiper-container {
-    margin-top: 30px;
-    position: relative;
-    overflow: hidden;
-    list-style: none;
-    padding: 15px 30px 0 60px;
-    z-index: 1;
-    /* width: 100% !important; */
-    /* width: 1980px !important; */
-    min-height: 220px;
+  margin-top: 30px;
+  /* position: relative; */
+  overflow: hidden;
+  /* list-style: none; */
+  padding: 20px 20px 20px 20px;
+  z-index: 1;
+  /* width: 100% !important; */
+  /* width: 1980px !important; */
+  /* min-height: 220px; */
   }
   
   .swiper-container-no-flexbox .swiper-slide {
@@ -698,7 +698,6 @@
 
   .slider-img {
     border-radius:8px;
-    max-width: 87% !important;
     cursor: pointer;
     background-color: rgba(255, 255, 255, 1);
     transition: all 3s cubic-bezier(0, 1, 0.22, 1) !important;

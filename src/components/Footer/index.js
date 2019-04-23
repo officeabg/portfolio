@@ -53,25 +53,25 @@ const Footer = ({ author, title }) => (
                 </ul>
               </div>
               <div className="col-md-6">
-                <a href="#about" className="btn btn-three">
+                <Link to="/#" className="btn btn-three">
                   About
-                </a>
+                </Link>
                 <br />
-                <a href="#skills" className="btn btn-three">
+                <Link to="/#skills" className="btn btn-three">
                   Skills
-                </a>
+                </Link>
                 <br />
-                <a href="#portfolio" className="btn btn-three">
+                <Link to="/#portfolio-web" className="btn btn-three">
                   Portfolio
-                </a>
+                </Link>
                 <br />
-                <a href="cv.php" className="btn btn-three">
+                <Link to="/cv" className="btn btn-three">
                   CV
-                </a>
+                </Link>
                 <br />
-                <a href="#contact" className="btn btn-three">
+                <Link to="/#contact" className="btn btn-three">
                   Contact
-                </a>
+                </Link>
                 <br />
               </div>
             </div>

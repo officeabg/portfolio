@@ -11,7 +11,7 @@ class Mobile extends React.Component {
             <li className="nav-item">
               <a
                 className="nav-link js-scroll-trigger"
-                href="#wrap"
+                href="/"
                 onClick={showMenu}
               >
                 <div className="btn btn-three">
@@ -22,7 +22,7 @@ class Mobile extends React.Component {
             <li className="nav-item">
               <a
                 className="nav-link js-scroll-trigger"
-                href="#skills"
+                href="/#skills"
                 onClick={showMenu}
               >
                 <div className="btn btn-three">
@@ -33,7 +33,7 @@ class Mobile extends React.Component {
             <li className="nav-item">
               <a
                 className="nav-link js-scroll-trigger"
-                href="#portfolio"
+                href="/#portfolio"
                 onClick={showMenu}
               >
                 <div className="btn btn-three">
@@ -44,7 +44,7 @@ class Mobile extends React.Component {
             <li className="nav-item">
               <a
                 className="nav-link js-scroll-trigger"
-                href="cv.php"
+                href="cv"
                 onClick={showMenu}
               >
                 <div className="btn btn-three">
@@ -55,7 +55,7 @@ class Mobile extends React.Component {
             <li className="nav-item">
               <a
                 className="nav-link js-scroll-trigger"
-                href="#contact"
+                href="/#contact"
                 onClick={showMenu}
               >
                 <div className="btn btn-three">

@@ -71,11 +71,11 @@ $font_14: Open Sans;
 //original selectors
 //html, body
 %extend_1 {
-	height: 100%;
 	color: $white !important;
-	margin: 0;
+	margin: 8px;
 	position: relative;
 	background-color: $color_woodsmoke_approx !important;
+	max-width: 1871px;
 	
 }
 
@@ -104,9 +104,7 @@ h5 {
     font-weight: 200 !important;
     font-size: 1.2rem;
 }
-.row{
-	margin-left: 10px !important;
-}
+
 .text-white {
 	max-width: 100%;
 	margin-left: auto !important;
@@ -359,6 +357,12 @@ li {
 	}
 }
 @media(min-width: 992px) {
+	.styles_closeButton__20ID4 {
+		fill: #696767;
+		outline: none !important;
+		margin-top: -10px;
+		margin-right: 8% !important;
+	}
 	header {
 		padding: 15px 0 10px;
 	}
@@ -428,11 +432,12 @@ li {
 	padding-top: 1px;
 	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
 	border-radius: 3px;
-	background-color: $color_shark_approx;
-	border-bottom: 1px solid $color_log_cabin_approx;
-	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-	box-shadow: inset 0 2px 5px $black_30, 0 1px 0 $white_10;
+	border-bottom: 1px solid #1f1f21;
+	box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.1);
+	background: #212529;
 	position: relative;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
 	.skill-bar {
 		display: block;
 		overflow: hidden;
@@ -593,6 +598,12 @@ b {
 	.gallery-item {
 		margin: 20px !important;
 	}
+	.styles_closeButton__20ID4 {
+		fill: #696767;
+		outline: none !important;
+		margin-top: -10px;
+		
+	}
 	.lightbox-item {
 		text-align: center;
 		img {
@@ -731,7 +742,7 @@ b {
 .gallery-link:hover .gallery-name {
 
 		position: absolute !important;
-		bottom: 12px !important;
+		bottom: 3px !important;
 		z-index: 20 !important;
 		text-align: left !important;
 		background-color: rgb(16, 17, 12) !important;
@@ -739,9 +750,9 @@ b {
 		color: #aeaeae !important;
 		padding: 10px 100px 0px 100px !important;
 		transition: all 1.3s cubic-bezier(0.19, 1, 0.22, 1) 0s !important;
-		margin-left: 12px;
+		margin-left: 3px;
 		border-radius: 5px !important;
-				font-weight: 200;
+		font-weight: 200;
 }
 
 .gallery-link:hover .gallery-department{
@@ -752,9 +763,11 @@ b {
 		img {
 			width: auto !important;
 			margin: 0 !important;
-			border-radius: 5px;
+			border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
 			
-					}
+		}
+		
 
 		.gallery-department {
 			position: absolute !important;
@@ -769,6 +782,7 @@ b {
 		&:hover {
 			//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
 			transform: scale(0.99) !important;
+			border-radius: 5px;
 			&:after {
 				//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
 				transform: scale(1.09) !important;
@@ -1129,7 +1143,7 @@ b {
 		box-shadow: inset 0 2px 5px $black_30, 0 1px 0 $white_10;
 		background: $color_shark_approx;
 		font-family: $font_0, $font_1;
-	  font-size: 22px !important;
+	  font-size: 20px !important;
 		font-weight: 300;
 		font-size: 18px;
 		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
@@ -1142,6 +1156,7 @@ b {
 		word-wrap: break-word;
 		resize: vertical;
 		overflow: hidden;
+		color:#f2f1f1;
 		&:focus {
 			outline: none;
 			resize: none;
@@ -1240,7 +1255,7 @@ b {
 	}
 	#amount {
 		border: 0;
-    color: #aeaeae;
+    color: #212529;
     font-weight: 200;
     font-size: 36px;
     padding: 12px;
@@ -1250,7 +1265,7 @@ b {
     border-left: 0;
     border-bottom: 1px solid #1f1f21;
     box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.1);
-    background: #212529;
+    background: rgba(232, 240, 254, 1);
     font-family: Open Sans, sans-serif !important;
     /* color: #ffffff; */
     /* font-weight: 300; */
@@ -1303,8 +1318,7 @@ b {
 #gallery {
 	margin-top: 80px;
 }
-.pagination {
-	width: 10%;
+.pag {
   margin-left: auto;
   margin-right: auto;
   margin-top: 150px; 
@@ -1313,7 +1327,7 @@ b {
 	font-weight: 300;
 }
 .cv-p {
-	font-size: 1rem;
+	font-size: 1.2rem;
 	margin-left: 0;
 	text-align: justify;
 }
@@ -1492,6 +1506,12 @@ svg {
 	}
 }
 @media screen and(max-width: 576px) {
+	.gallery-wrap {
+		margin-top: -120px;
+	}
+	.styles_closeButton__20ID4 {
+    margin-right: -15px;
+	}
 	.slideport-slider {
 		margin-top: 45px;
 		width: 400px;
@@ -1567,16 +1587,15 @@ svg {
 		margin-left: auto !important;
 		margin-right: auto !important;
 	}
+	#portfoliopm1 {
+		overflow-x: hidden;
+	}
 	.swiper-button-next {
 		margin-top:-40px;
 	}
 	.swiper-button-prev {
 		margin-top:-40px;
 	}
-	.row {
-		margin-left: -15px !important;
-	}
-
 	.text-white {
 		/* max-width: 100%; */
 		margin-left: auto !important;
@@ -1784,7 +1803,7 @@ svg {
 	transform-origin: 0 0;
 	img {
 		margin-left: -10px;
-		max-width: 100%;
+		max-width: 98%;
 		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
 		border-radius: 7px;
 		height: 220px;
@@ -1865,4 +1884,151 @@ a:hover {
 }
 .container-fluid {
 	margin-top: 100px;
+}
+.styles_modal__gNwvD {
+	max-width: 100% !important; 
+	position: relative !important;
+	padding: 0 !important;
+	background: transparent !important;
+	background-clip: padding-box !important;
+	box-shadow: none !important;
+	margin: auto !important;
+	border-radius: 5px !important;
+}
+.styles_overlay__CLSq- {
+	background: rgba(0, 0, 0, 1) !important;
+}
+
+.modalBig{
+	min-width: 100%;
+	min-width: 100%;
+	margin-left: -10% !important;
+	margin-top:10%;
+}
+.modDal {
+	overflow-x: hidden;
+}
+.modDal {
+	padding: 0px !important;
+	margin: 0px !important;
+	}
+.text-b {
+
+	color: #222 !important;
+}
+
+#print-wrapper {
+	margin-top:80px;
+}
+.white-b {
+	background-color: #fff ;
+}
+.black-b {
+	background-color: #000000 ;
+}
+.up{
+ margin-top: -100px;
+}
+.down {
+	margin-top:60px;
+}
+.bg-light {
+	background-color: #ffffff !important;
+}
+
+.healthcv {
+	margin-left: 45px;
+	height: 15px;
+	width: 85%;
+	margin-bottom: 10px;
+	padding-top: 1px;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 3px;
+	border-bottom: 1px solid #bdbdbe;
+	box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.1);
+	background: #e8f0fe;
+
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+	.skill-bar {
+		display: block;
+		overflow: visible;
+		position: relative;
+		height: 100%;
+		margin-left: 1px;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 3px;
+		min-width: 13px;
+		//Instead of the line below you could use @include border-bottom-right-radius($radius)
+		border-bottom-right-radius: 10px;
+		//Instead of the line below you could use @include border-top-right-radius($radius)
+		border-top-right-radius: 10px;
+		&:after {
+			display: block;
+			position: absolute;
+			background-color: $black_20;
+			width: 6px;
+			height: 6px;
+			top: 4px;
+			right: 4px;
+			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+			border-radius: 3px;
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: inset 0 2px 2px $black_30, 0 1px 1px $white_50;
+		}
+	}
+	.shade {
+		position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    margin-top: -30px;
+	}
+	
+}
+@page { size: portrait;  margin: 5mm;}
+
+@media print {
+  html, body {
+     border: 1px solid white;
+     height: 99%;
+     page-break-after: avoid !important;
+		 page-break-before: avoid !important;
+		 -webkit-print-color-adjust: exact;
+		 color-adjust: exact;
+		 display:table;
+  }
+  .print-display-none,
+  .print-display-none * {
+    display: none !important;
+  }
+  .print-visibility-hide,
+  .print-visibility-hide * {
+    visibility: hidden !important;
+  }
+  .printme,
+  .printme * {
+    visibility: visible !important;
+  }
+  .react-easy-print-print{
+    position: absolute;
+    left: 0;
+    top: 0;
+	}
+	.print:last-child{
+    page-break-after: avoid;
+    page-break-inside: avoid;
+    margin-bottom: 0px;
+}
+#skills{
+	page-break-inside: avoid;
+}
+}
+
+.skill-align{
+	margin-top:40px;
 }
