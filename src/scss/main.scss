@@ -268,9 +268,6 @@ color:#aeaeae;
 	background-color: $color_wild_sand_approx;
 	margin-top: -3px;
 }
-section {
-	padding: 20px 0;
-}
 
 .heading-light {
 	color: $white !important;
@@ -538,13 +535,6 @@ li {
 	filter: progid:dximagetransform.microsoft.gradient(startcolorstr='$color_downy_approx', endcolorstr='$color_primrose_approx', gradienttype=1);
 	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
 	box-shadow: inset 0 1px 0 $white_50, inset 0 -3px 4px $color_riptide_40_approx;
-}
-#portfolio, #portfolio-web, #portfolio-ui, #portfolio-lg, #portfolio-pm, #contact, #cv, #skills {
-	color: $white !important;
-	width: 100% !important;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: -100px;
 }
 p {
 	font-size: .8rem;
@@ -1841,8 +1831,8 @@ a:hover {
 	background-color: #141516 !important;
 }
 .profile-img img {
-	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
 	border-radius: 4px !important;
+	margin-top: 10px;
 }
 .name-wraper h1 {
 	float: left;
@@ -1866,7 +1856,6 @@ a:hover {
   max-width: 2em;
 }
 
-/* if you want to change the original color */
 .devicon-git-plain path {
   fill: #4691f6;
 }
@@ -2001,6 +1990,7 @@ a:hover {
 		 -webkit-print-color-adjust: exact;
 		 color-adjust: exact;
 		 display:table;
+		 background-color: #fff !important;
   }
   .print-display-none,
   .print-display-none * {
@@ -2014,19 +2004,32 @@ a:hover {
   .printme * {
     visibility: visible !important;
   }
-  .react-easy-print-print{
+  .react-easy-print-print {
     position: absolute;
     left: 0;
     top: 0;
 	}
-	.print:last-child{
+	.print:last-child {
     page-break-after: avoid;
     page-break-inside: avoid;
     margin-bottom: 0px;
 }
-#skills{
+#skills {
 	page-break-inside: avoid;
 }
+.footer {
+	display:none !important;
+}
+#contact {
+	display:none !important;
+}
+.hideprint {
+	display:none !important;
+}
+}
+.no-radius {
+	border-radius: 0 !important;
+	background-color:#10110c !important;
 }
 
 .skill-align{

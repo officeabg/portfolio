@@ -77,7 +77,7 @@ class Contact extends React.Component {
                   <div className="row contact-spacing">
                     <div className="col-lg-6">
                       <label>Budget Estimate</label>
-                      <div className="slider">
+                      <div className="slider" name="budget1">
                         <Slider
                           min={100}
                           max={100000}
@@ -88,7 +88,7 @@ class Contact extends React.Component {
                       </div>
                     </div>
                     <div className="col-lg-6">
-                      <div name="budget" id="amount" readOnly>
+                      <div name="budget" id="amount">
                         {value}
                       </div>
                     </div>

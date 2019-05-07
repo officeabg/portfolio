@@ -41,7 +41,7 @@ class Navi extends React.Component {
           <div className="collapse navbar-collapse" id="navbarResponsive">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <Link className="nav-link js-scroll-trigger" to="/#">
+                <Link className="nav-link js-scroll-trigger" to="/">
                   <div className="btn btn-three">
                     <span>About</span>
                   </div>

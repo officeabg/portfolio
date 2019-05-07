@@ -27,18 +27,3 @@ const Template = ({ data, location }) => (
   </div>
 )
 export default Template
-
-export const pageQuery = graphql`
-  query PostByPath($path: String!) {
-    site {
-      meta: siteMetadata {
-        title
-        description
-        url: siteUrl
-        author
-        twitter
-        adsense
-      }
-    }
-  }
-`

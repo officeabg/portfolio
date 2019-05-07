@@ -12,7 +12,7 @@ import Slider4 from 'components/slider/slider4'
 
 class Profile extends React.Component {
   componentDidMount() {
-    setTimeout(() => window.dispatchEvent(new Event('resize')), 500)
+    setTimeout(() => window.dispatchEvent(new Event('resize')), 1000)
   }
   render() {
     const { location, data } = this.props
@@ -26,7 +26,8 @@ class Profile extends React.Component {
               <div className="col-lg-3">&nbsp;</div>
               <div className="col-lg-4">
                 <div id="typewriter">
-                  <Typing speed={5} startDelay={500}>
+                  <Typing>
+                    <Typing.Speed ms={1} />
                     <span className="var-highlight">var</span> me =
                     <span> &#123; </span>
                     <br />

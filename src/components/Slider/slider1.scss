@@ -11,7 +11,7 @@
  */
 
  .swiper-container {
-  margin-top: 30px;
+  margin-top: 30px; */
   /* position: relative; */
   overflow: hidden;
   /* list-style: none; */
@@ -20,6 +20,9 @@
   /* width: 100% !important; */
   /* width: 1980px !important; */
   /* min-height: 220px; */
+  }
+  .swiper-item {
+    width:350px !important;
   }
   
   .swiper-container-no-flexbox .swiper-slide {
@@ -198,12 +201,11 @@
     right: auto;
     transform:scale(0.8);
     transition: all 1s cubic-bezier(0, 1, 0.22, 1) !important;
-    outline:none;
   }
 
   .swiper-button-prev:hover {
-    transform: scale(1.1);
-    cursor: pointer;
+      transform: scale(1.1);
+      cursor: pointer;
   }
   
   .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
@@ -212,10 +214,12 @@
     left: auto;
     transform:scale(0.8);
     transition: all 1s cubic-bezier(0, 1, 0.22, 1) !important;
+    outline:none;
 }
 .swiper-button-next:hover {
     transform: scale(1.1);
     cursor: pointer;
+    outline:none;
 }
   
   .swiper-button-prev.swiper-button-white, .swiper-container-rtl .swiper-button-next.swiper-button-white {
@@ -696,18 +700,19 @@
   }
   
 
-  .slider-img {
+  .slider4-img {
     border-radius:8px;
+    max-width: 87% !important;
     cursor: pointer;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 0.8);
     transition: all 3s cubic-bezier(0, 1, 0.22, 1) !important;
     }
 
-  .slider-img:hover {
+  .slider4-img:hover {
 
     content: "" !important;
     display: block !important;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: #10110c;
     //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
     //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
     box-shadow: none !important;
@@ -723,23 +728,14 @@
     //Instead of the line below you could use @include transition-duration($duration-1, $duration-2, $duration-3, $duration-4, $duration-5, $duration-6, $duration-7, $duration-8, $duration-9, $duration-10)
     transition-duration: 2s;
   }
-
   @media screen and(max-width: 992px) {
 
     .swiper-button-next {
         margin-top: -20px !important;
         margin-right: 20px;
-      }
-      .swiper-button-prev {
-        margin-top:-20px !important;
-      }
-      .slider-img {
-        border-radius:8px;
-        max-width: 110% !important;
-        cursor: pointer;
-        background-color: rgba(255, 255, 255, 1);
-        transition: all 3s cubic-bezier(0, 1, 0.22, 1) !important;
-        margin-left:-30px;
-      }
+	}
+	.swiper-button-prev {
+		margin-top:-20px !important;
+	}
 
   }
